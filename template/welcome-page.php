@@ -1,7 +1,7 @@
 <div class="wrap welcome-wrap">
-    <h3>Welcome To <?php echo $this->plugin_name; ?></h3>
+    <h3>Welcome To <?php echo _e($this->plugin_name); ?></h3>
     <div class="about-text plugin_welcome_text">
-        Thanks for installing! <?php echo $this->plugin_name; ?> is more powerful, stable and secure than ever before.
+        Thanks for installing! <?php echo _e($this->plugin_name); ?> is more powerful, stable and secure than ever before.
         We hope you enjoy using it.
     </div>
 
@@ -169,8 +169,6 @@ div#poststuff {
 }
 </style>
 
-
-<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
 <script>
 ! function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0],

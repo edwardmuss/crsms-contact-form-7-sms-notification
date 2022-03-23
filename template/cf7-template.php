@@ -43,7 +43,7 @@
 						<label for="wpcf7-sms-recipient"><?php _e("Visitor Mobile: ",Contact_FormSI_TXT); ?></label>
 					</th>
 					<td>
-						<input type="text" id="wpcf7-sms-recipient" name="wpcf7si-settings[visitorNumber]" class="wide" size="70" value="<?php echo @$data['visitorNumber']; ?>">
+						<input type="text" id="wpcf7-sms-recipient" name="wpcf7si-settings[visitorNumber]" class="wide" size="70" value="<?php echo _e(@$data['visitorNumber']); ?>">
 						<br/> <?php _e("<small>Use <b>Contact_Form Tags</b> To Get Visitor Mobile Number | Enter Numbers By <code>,</code> for multiple</small>",Contact_FormSI_TXT);?>
 					</td>
 				</tr>
@@ -53,7 +53,7 @@
 						<label for="wpcf7-mail-body"><?php _e("Message body:",Contact_FormSI_TXT); ?></label>
 					</th>
 					<td>
-						<textarea id="wpcf7-mail-body" name="wpcf7si-settings[visitorMessage]" cols="100" rows="6" class="large-text code"><?php echo @$data['visitorMessage']; ?></textarea>
+						<textarea id="wpcf7-mail-body" name="wpcf7si-settings[visitorMessage]" cols="100" rows="6" class="large-text code"><?php echo _e(@$data['visitorMessage']); ?></textarea>
 					</td>
 				</tr>
 			</tbody>

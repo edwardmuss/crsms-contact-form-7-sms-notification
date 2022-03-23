@@ -6,7 +6,7 @@
  * Version:           1.0.0
  * Author:            edwardmuss
  * Author URI:        https://www.edwardmuss.tech
- * Text Domain:       usmsgh-contact-for-7-sms-notification
+ * Text Domain:       crsms-contact-for-7-sms-notification
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt 
  */
@@ -30,7 +30,7 @@ class CRSMS_Contact_Form_Sms_Notification_abn
 			'dbslug' => 'cf7isi',
 			'welcome_slug' => Contact_FormSI_SLUG . '-welcome-page',
 			'wp_plugin_slug' => Contact_FormSI_SLUG,
-			'wp_plugin_url' => 'https://profiles.wordpress.org/cloudrebuecf7/',
+			'wp_plugin_url' => 'https://wordpress.org/plugins/crsms-contact-form-7-sms-notification/',
 			'tweet_text' => __('Adds an SMS box to your Contact Form 7 options pages, fill this in and you\'ll get a text message each time somebody fills out one of your forms', Contact_FormSI_TXT),
 			'twitter_user' => 'cloudrebue',
 			'twitter_hash' => 'Contact_FormInternationSMSnotification',

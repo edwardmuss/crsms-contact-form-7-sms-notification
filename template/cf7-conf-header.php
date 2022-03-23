@@ -20,7 +20,7 @@ foreach($menus as $menuI => $menuV){
 ?>
 
 <div class="wrap">
-	<h2 class="nav-tab-wrapper woo-nav-tab-wrapper"><?php echo $menu; ?></h2>
+	<h2 class="nav-tab-wrapper woo-nav-tab-wrapper"><?php echo _e($menu); ?></h2>
 	<?php
 		if(isset($_REQUEST['tab'])){
 			if($_REQUEST['tab'] == 'history'){

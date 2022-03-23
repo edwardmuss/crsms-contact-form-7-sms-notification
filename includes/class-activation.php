@@ -16,12 +16,12 @@ class cf7isi_activation_welcome_page{
 			'version' => '0.1',
 			'txt_lang' => '',
 
-			'wp_plugin_url' => 'https://usmsgh.com',
+			'wp_plugin_url' => 'https://cloudrebue.co.ke',
 			
 			'tweet_text' => 'What A Stunned Plugin',
-			'twitter_user' => 'urhitech',
-			'twitter_hash' => 'WCRBP',
-			'github_user' => 'urhitech',
+			'twitter_user' => 'cloudrebue',
+			'twitter_hash' => 'CRSMS',
+			'github_user' => 'edwardmuss',
 			'github_repo' => 'woocommerce-quick-donation',
 			
 			'show_change_log' => true,
@@ -107,7 +107,7 @@ class cf7isi_activation_welcome_page{
 		if($this->show_decs){
 			$data = '<div class="change_log_list"> '.$this->decs.'</div>'; 
 		}
-		if(!$return){echo $data;}
+		if(!$return){echo _e($data);}
 		return $data;
 	}
 
@@ -117,7 +117,7 @@ class cf7isi_activation_welcome_page{
 		if($this->show_change_log){
 			$data = '<div class="change_log_list"> <h1>'.__('Change Log', $this->txt_lang) .'</h1>'.$this->change_log.'</div>'; 
 		}
-		if(!$return){echo $data;}
+		if(!$return){echo _e($data);}
 		return $data;
 	}
 	
@@ -128,7 +128,7 @@ class cf7isi_activation_welcome_page{
 		if($this->show_downloads){
 			$data = sprintf('<p class="downloads_count"> <span> %s </span> '.__(' Download\'s so far. help use reach more audience by sharing' , $this->txt_lang) .'</p>',$this->downloads); 
 		}
-		if(!$return){echo $data;}
+		if(!$return){echo _e($data);}
 		return $data;
 	}	
 	

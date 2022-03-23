@@ -101,9 +101,9 @@ class cf7si_history_listing_table extends WP_List_Table {
 	 * @param object $item The current item
 	 */
 	public function single_row( $item ) {
-		echo '<tr id="'.$item['ID'].'" >';
+		echo _e( '<tr id="'.$item['ID'].'" >', 'crsmcf7' );
 		$this->single_row_columns( $item );
-		echo '</tr>';
+		echo _e ('</tr>','crsmcf7');
 	}	
 }
 

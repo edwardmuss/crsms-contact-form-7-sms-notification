@@ -30,7 +30,6 @@ class CRSMS_Contact_Form_Sms_Notification_abn_Functions
 
     public function configure_send_sms($form)
     {
-        date_default_timezone_set('Africa/Nairobi');
         $options = get_option('wpcf7_international_sms_' . (method_exists($form, 'id') ? $form->id() : $form->id));
         $sendToAdmin = false;
         $sendToVisitor = false;
