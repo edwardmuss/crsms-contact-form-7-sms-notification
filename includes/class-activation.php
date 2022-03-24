@@ -89,7 +89,7 @@ class cf7isi_activation_welcome_page{
      * Welcome Page html
      */
     public function welcome_screen_content() {
-        $this->wp_api();
+        $this->plugin_info();
 		require($this->page_html);
 		
     }
@@ -121,36 +121,11 @@ class cf7isi_activation_welcome_page{
 		return $data;
 	}
 	
-
-		
-	public function get_downloads($return = false){
-		$data = '';
-		if($this->show_downloads){
-			$data = sprintf('<p class="downloads_count"> <span> %s </span> '.__(' Download\'s so far. help use reach more audience by sharing' , $this->txt_lang) .'</p>',$this->downloads); 
-		}
-		if(!$return){echo _e($data);}
-		return $data;
-	}	
-	
-	
 	/**
 	 * Gets Remote Data From WP API
 	 */
-	public function wp_api(){
-		$args = (object) array( 'slug' => $this->wp_plugin_slug );
-		$request = array( 'action' => 'plugin_information', 'timeout' => 15, 'request' => serialize( $args) );
-		$url = 'http://api.wordpress.org/plugins/info/1.0/';
-		$response = wp_remote_post( $url, array( 'body' => $request ) );
-		$plugin_info = unserialize( $response['body'] );
-		$downloads = ''; $decs = ''; $change_log = '';
-		if($plugin_info){
-			$downloads = $plugin_info->downloaded;
-			$decs = $plugin_info->sections['description'];
-			$change_log = $plugin_info->sections['changelog'];
-		}
-
-		$this->decs = $decs;
-		$this->change_log = $change_log;
-		$this->downloads = $downloads;
+	public function plugin_info(){
+		$decs = "Sends message on contact form from website";
+		$change_log = "1.0.7";
 	}
 }
