@@ -107,7 +107,7 @@ class cf7isi_activation_welcome_page{
 		if($this->show_decs){
 			$data = '<div class="change_log_list"> '.$this->decs.'</div>'; 
 		}
-		if(!$return){echo _e($data);}
+		if(!$return){echo ($data);}
 		return $data;
 	}
 
@@ -117,7 +117,7 @@ class cf7isi_activation_welcome_page{
 		if($this->show_change_log){
 			$data = '<div class="change_log_list"> <h1>'.__('Change Log', $this->txt_lang) .'</h1>'.$this->change_log.'</div>'; 
 		}
-		if(!$return){echo _e($data);}
+		if(!$return){echo ($data);}
 		return $data;
 	}
 	

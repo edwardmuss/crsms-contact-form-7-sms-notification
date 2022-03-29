@@ -201,8 +201,8 @@ class CRSMS_Contact_Form_Sms_Notification_abn_Functions
  */
 function dd($data)
 {
-    _e('<pre>');
+    ('<pre>');
     print_r($data);
-    _e('</pre>');
+    ('</pre>');
     die;
 }

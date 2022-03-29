@@ -4,7 +4,7 @@
  * Plugin Name:       CRSMS Contact Form 7 SMS Notification
  * Description:       Using Cloud Rebue Contact Form 7 SMS Notification
  * Version:           1.0.0
- * Author:            edwardmuss
+ * Author:            Edward Muss
  * Author URI:        https://www.edwardmuss.tech
  * Text Domain:       crsms-contact-for-7-sms-notification
  * License:           GPL-2.0+

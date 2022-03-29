@@ -101,9 +101,9 @@ class cf7si_history_listing_table extends WP_List_Table {
 	 * @param object $item The current item
 	 */
 	public function single_row( $item ) {
-		echo _e( '<tr id="'.$item['ID'].'" >', 'crsmcf7' );
+		echo ( '<tr id="'.$item['ID'].'" >', 'cloudrebue' );
 		$this->single_row_columns( $item );
-		echo _e ('</tr>','crsmcf7');
+		echo ('</tr>','cloudrebue');
 	}	
 }
 
@@ -114,10 +114,10 @@ function cf7si_history_listing(){
         <form id="movies-filter" method="get">
             <?php $testListTable->display() ?>
         </form>
-		<button type="button"  id="emptyHistory" class="button button-secondary"><?php _e('Empty History',Contact_FormSI_TXT); ?></button>
+		<button type="button"  id="emptyHistory" class="button button-secondary"><?php ('Empty History',Contact_FormSI_TXT); ?></button>
 		
 <script>
-	var DELETEPOPTXT = '<?php _e('Are You Sure Want To Empty SMS History ?',Contact_FormSI_TXT); ?>';
+	var DELETEPOPTXT = '<?php ('Are You Sure Want To Empty SMS History ?',Contact_FormSI_TXT); ?>';
 </script>
     <?php
 }
