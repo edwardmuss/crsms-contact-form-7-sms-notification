@@ -101,9 +101,9 @@ class cf7si_history_listing_table extends WP_List_Table {
 	 * @param object $item The current item
 	 */
 	public function single_row( $item ) {
-		echo ( '<tr id="'.$item['ID'].'" >', 'cloudrebue' );
+		echo ( '<tr id="'.$item['ID'].'" >');
 		$this->single_row_columns( $item );
-		echo ('</tr>','cloudrebue');
+		echo ('</tr>');
 	}	
 }
 
